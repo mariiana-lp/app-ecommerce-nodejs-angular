@@ -1,0 +1,40 @@
+<!-- product.component.html
+<div>
+    <h2>Products</h2>
+    <ul>
+      <li *ngFor="let product of products">
+        {{ product.name }} - {{ product.price }}
+        <button (click)="deleteProduct(product.id)">Delete</button>
+        <button (click)="selectedProduct = { ...product }">Edit</button>
+      </li>
+    </ul>
+  </div>
+  
+  <div>
+    <h2>Add Product</h2>
+    <form>
+      <label>Name: </label>
+      <input [(ngModel)]="newProduct.name" />
+      <br />
+      <label>Price: </label>
+      <input [(ngModel)]="newProduct.price" type="number" />
+      <br />
+      <button (click)="addProduct()">Add Product</button>
+    </form>
+  </div> -->
+  
+  <!-- product.component.html -->
+<div>
+    <h2>Edit Product</h2>
+    <form>
+      <label>Name: </label>
+      <input [(ngModel)]="selectedProduct.name" />
+      <br />
+      <label>Price: </label>
+      <input [(ngModel)]="selectedProduct.price" type="number" />
+      <br />
+      <button (click)="updateProduct()">Update Product</button>
+    </form>
+  </div>
+  
+  
